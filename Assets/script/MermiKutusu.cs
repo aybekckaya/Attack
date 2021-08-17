@@ -1,40 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MermiKutusu : MonoBehaviour
 {
-    public List<GameObject> MermiKutusuPoint = new List<GameObject>();
-    public GameObject Mermi_Kutusunun_kendisi;
+    string[] silahlar =
+        {
+            "Magnum",
+            "Pompali",
+            "Sniper",
+            "Taramali"
+        };
+    int[] mermiSayisi =
+    {
+            10,
+            20,
+            5,
+            30
+        };
 
-    public static bool Mermi_kutusu_varmi;
-    public float Kutu_cikma_suresi;
+    public List<Sprite> Silah_resimleri = new List<Sprite>();
+    public Image  Silahin_resimi;
     public string Olusan_Silahin_Turu;
-    public int Olusan_Mermi_sayisi;
+    public int Olusan_Mermi_Sayisi;
+
+    
+
     // Start is called before the first frame update
     void Start()
     {
-        Mermi_kutusu_varmi = false;
-        StartCoroutine(Mermi_Kutusu_yap());
+        int gelenanahtar = Random.Range(0, silahlar.Length );
+         Olusan_Silahin_Turu = silahlar[gelenanahtar];
+         Olusan_Mermi_Sayisi = mermiSayisi[Random.Range(0, silahlar.Length )];
+        Silahin_resimi.sprite = Silah_resimleri[gelenanahtar];
+
+        // Olusan_Silahin_Turu = "Taramali";
+       // Olusan_Mermi_Sayisi = 30;
 
     }
-    IEnumerator Mermi_Kutusu_yap()
-    {
-        while (true)
-        {
-            yield return null;
 
-            if (!Mermi_kutusu_varmi)
-            {
-                yield return new WaitForSeconds(Kutu_cikma_suresi);
-
-                int randomsayim = Random.Range(0, 3);
-                Instantiate(Mermi_Kutusunun_kendisi, MermiKutusuPoint[randomsayim].transform.position, MermiKutusuPoint[randomsayim].transform.rotation);
-                Mermi_kutusu_varmi = true;
-
-            }
-
-
-        }
-    }
+   
 }

@@ -20,7 +20,7 @@ public class bosKovan : MonoBehaviour
             {
                 Destroy(gameObject,1f);
             }
-            Debug.Log("Yere Carptý");
+            
         }
     }
 }

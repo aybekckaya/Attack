@@ -27,9 +27,10 @@ public class gun1 : MonoBehaviour
     public ParticleSystem KanEfekt;
 
     [Header("SÝLAH AYARLARI")]
-    public int ToplamMermiSayisi;
+     int ToplamMermiSayisi;
     public int SarjorKapasitesi;
     public int KalanMermi;
+    public string SilahinAdi;
     public TextMeshProUGUI ToplamMermi_Text;
     public TextMeshProUGUI KalanMermi_Text;
 
@@ -39,16 +40,19 @@ public class gun1 : MonoBehaviour
     [Header("OTHERS")]
     int AtilmisOlanMermi;
     public Camera myCam;
-   
-    
+
+    Mermi_Kutusu_Olustur mermi_kutusu_kod;
     // Start is called before the first frame update
     void Start()
     {
+        ToplamMermiSayisi = PlayerPrefs.GetInt(SilahinAdi + "_Mermi");
         Kovan_ciksinmi = true;
-        KalanMermi = SarjorKapasitesi;
-
+        Baslangic_Mermi_Doldur();
         SajorDegistirmeTeknik("NormalYaz");
         Animatorum = GetComponent<Animator>();
+        mermi_kutusu_kod = GetComponent<Mermi_Kutusu_Olustur>();
+
+        
     }
    
     // Update is called once per frame
@@ -75,49 +79,54 @@ public class gun1 : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
-            MermiAL();
+            MermiAl();
         }
-    }
-    void MermiKaydet(string silahturu, int mermisayisi)
-    {
-
-        MermiAlmaSesi.Play();
-
-        switch (silahturu)
-        {
-            case "Taramali":
-
-                ToplamMermiSayisi += mermisayisi;
-                SajorDegistirmeTeknik("NormalYaz");
-
-                break;
-
-            case "Pompali":
-
-                break;
-
-            case "Magnum":
-
-                break;
-
-            case "Sniper":
-
-                break;
-        }
-
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Mermi"))
         {
-            MermiKaydet(other.transform.gameObject.GetComponent<MermiKutusu>().Olusan_Silahin_Turu, other.transform.gameObject.GetComponent<MermiKutusu>().Olusan_Mermi_sayisi);
-            MermiKutusu.Mermi_kutusu_varmi = false;
+            MermiKaydet(other.transform.gameObject.GetComponent<MermiKutusu>().Olusan_Silahin_Turu,other.transform.gameObject.GetComponent<MermiKutusu>().Olusan_Mermi_Sayisi);
+            Mermi_Kutusu_Olustur.MermiKutusuVarmi = false;
             Destroy(other.transform.parent.gameObject);
         }
     }
+
+    void MermiAl()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(myCam.transform.position, myCam.transform.forward, out hit, 4))
+        {
+            if (hit.transform.gameObject.CompareTag("Mermi"))
+            {
+                MermiKaydet(hit.transform.gameObject.GetComponent<MermiKutusu>().Olusan_Silahin_Turu, hit.transform.gameObject.GetComponent<MermiKutusu>().Olusan_Mermi_Sayisi);
+                Mermi_Kutusu_Olustur.MermiKutusuVarmi = false;
+                Destroy(hit.transform.parent.gameObject);
+            }
+        }
+    }
+    void Baslangic_Mermi_Doldur()
+    {
+        if (ToplamMermiSayisi <= SarjorKapasitesi)
+        {
+
+
+            KalanMermi = ToplamMermiSayisi;
+            ToplamMermiSayisi = 0;
+            PlayerPrefs.SetInt(SilahinAdi + "_Mermi", 0);
+
+        }
+        else
+        {
+            KalanMermi = SarjorKapasitesi;
+            ToplamMermiSayisi -= SarjorKapasitesi;
+            PlayerPrefs.SetInt(SilahinAdi + "_Mermi", ToplamMermiSayisi);
+
+        }
+    }
     
-        
+      
     IEnumerator ReloadYap()
     {
         if (KalanMermi < SarjorKapasitesi && ToplamMermiSayisi != 0)
@@ -165,25 +174,7 @@ public class gun1 : MonoBehaviour
         }
        
     }
-    void MermiAL()
-    {
-
-        RaycastHit hit;
-
-        if (Physics.Raycast(myCam.transform.position, myCam.transform.forward, out hit, 4))
-        {
-
-            if (hit.transform.gameObject.CompareTag("Mermi"))
-            {
-
-                MermiKaydet(hit.transform.gameObject.GetComponent<MermiKutusu>().Olusan_Silahin_Turu, hit.transform.gameObject.GetComponent<MermiKutusu>().Olusan_Mermi_sayisi);
-                MermiKutusu.Mermi_kutusu_varmi = false;
-                Destroy(hit.transform.parent.gameObject);
-
-
-            }
-        }
-    }
+    
 
     void SajorDegistirmeTeknik(string tur)
     {
@@ -197,17 +188,20 @@ public class gun1 : MonoBehaviour
                     {
                         KalanMermi = SarjorKapasitesi;
                         ToplamMermiSayisi = olusanTopDeger - SarjorKapasitesi;
+                        PlayerPrefs.SetInt(SilahinAdi + "_Mermi", ToplamMermiSayisi);
                     }
                     else
                     {
                         KalanMermi += ToplamMermiSayisi;
                         ToplamMermiSayisi = 0;
+                        PlayerPrefs.SetInt(SilahinAdi + "_Mermi", 0);
                     }
                 }
                 else
                 {
                     ToplamMermiSayisi -= SarjorKapasitesi - KalanMermi;
                     KalanMermi = SarjorKapasitesi;
+                    PlayerPrefs.SetInt(SilahinAdi + "_Mermi", ToplamMermiSayisi);
                 }
 
                 ToplamMermi_Text.text = ToplamMermiSayisi.ToString();
@@ -219,10 +213,12 @@ public class gun1 : MonoBehaviour
                 {
                     KalanMermi = ToplamMermiSayisi;
                     ToplamMermiSayisi = 0;
+                    PlayerPrefs.SetInt(SilahinAdi + "_Mermi", 0);
                 }
                 else
                 {
                     ToplamMermiSayisi -= SarjorKapasitesi;
+                    PlayerPrefs.SetInt(SilahinAdi + "_Mermi", ToplamMermiSayisi);
                     KalanMermi = SarjorKapasitesi;
                 }
 
@@ -254,6 +250,35 @@ public class gun1 : MonoBehaviour
 
         KalanMermi--;
         KalanMermi_Text.text = KalanMermi.ToString();
+
+    }
+    void MermiKaydet(string silahturu, int mermisayisi)
+    {
+
+        MermiAlmaSesi.Play();
+
+        switch (silahturu)
+        {
+            case "Taramali":
+
+                ToplamMermiSayisi += mermisayisi;
+                PlayerPrefs.SetInt(SilahinAdi + "_Mermi", ToplamMermiSayisi);
+                SajorDegistirmeTeknik("NormalYaz");
+
+                break;
+
+            case "Pompali":
+                PlayerPrefs.SetInt("Pompali_Mermi", PlayerPrefs.GetInt("Pompali_Mermi")+mermisayisi);
+                break;
+
+            case "Magnum":
+                PlayerPrefs.SetInt("Magnum_Mermi", PlayerPrefs.GetInt("Magnum_Mermi") + mermisayisi);
+                break;
+
+            case "Sniper":
+                PlayerPrefs.SetInt("Sniper_Mermi", PlayerPrefs.GetInt("Sniper_Mermi") + mermisayisi);
+                break;
+        }
 
     }
 }
