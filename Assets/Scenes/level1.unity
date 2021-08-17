@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.43688485, g: 0.4845369, b: 0.5647929, a: 1}
+  m_IndirectSpecularColor: {r: 0.43688503, g: 0.4845369, b: 0.56479317, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3956,45 +3956,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1788957858764028600, guid: 2878cf97ab079d14c9de681866e9a6de, type: 3}
   m_PrefabInstance: {fileID: 9091960067489536478}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &745658893
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 745658892}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 61c95a698df818b4fb420abafd654eec, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &745658894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 745658892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa7ed600e44b78841979f71f4c5a8a17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Silah_resimleri:
-  - {fileID: 21300000, guid: c09e76833e73f0541b2620fed0bb40cb, type: 3}
-  - {fileID: 21300000, guid: d46ca39363f0e984ca1e781e49cfc225, type: 3}
-  - {fileID: 21300000, guid: 9bc2c9e2cd69ae3419d4aa38e6d6068e, type: 3}
-  - {fileID: 21300000, guid: f3976900fa3c59a42b63a0810a9d6748, type: 3}
-  Silahin_resimi: {fileID: 932538284}
-  Olusan_Silahin_Turu: 
-  Olusan_Mermi_Sayisi: 0
 --- !u!1 &746010280 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: ed49ee3d893710a4e9c396aa38de2c0b, type: 3}
@@ -12315,6 +12276,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Mermi
       objectReference: {fileID: 0}
+    - target: {fileID: 3562443488437435808, guid: 2878cf97ab079d14c9de681866e9a6de, type: 3}
+      propertyPath: Silahin_resimi
+      value: 
+      objectReference: {fileID: 932538284}
     m_RemovedComponents:
     - {fileID: -1663978493017821589, guid: 2878cf97ab079d14c9de681866e9a6de, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2878cf97ab079d14c9de681866e9a6de, type: 3}
