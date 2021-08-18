@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-public class Pompali : MonoBehaviour
+
+public class sniper : MonoBehaviour
 {
     Animator Animatorum;
 
@@ -43,7 +44,7 @@ public class Pompali : MonoBehaviour
     void Start()
     {
         ToplamMermiSayisi = PlayerPrefs.GetInt(SilahinAdi + "_Mermi");
-        Kovan_ciksinmi = false;
+        Kovan_ciksinmi = true;
         Baslangic_Mermi_Doldur();
         SajorDegistirmeTeknik("NormalYaz");
         Animatorum = GetComponent<Animator>();
@@ -76,6 +77,7 @@ public class Pompali : MonoBehaviour
         {
             MermiAl();
         }
+
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -141,8 +143,6 @@ public class Pompali : MonoBehaviour
 
         }
     }
-
-
     void AtesEt()
     {
         AtesEtmeTeknik›slem();
@@ -168,8 +168,6 @@ public class Pompali : MonoBehaviour
         }
 
     }
-
-
     void SajorDegistirmeTeknik(string tur)
     {
         switch (tur)
@@ -240,7 +238,7 @@ public class Pompali : MonoBehaviour
         }
         atesSesi.Play();
         AtesEfekt.Play();
-        Animatorum.Play("pompaliates");
+        Animatorum.Play("sniperates");
 
         KalanMermi--;
         KalanMermi_Text.text = KalanMermi.ToString();
@@ -258,9 +256,7 @@ public class Pompali : MonoBehaviour
                 break;
 
             case "Pompali":
-                ToplamMermiSayisi += mermisayisi;
-                PlayerPrefs.SetInt(SilahinAdi + "_Mermi", ToplamMermiSayisi);
-                SajorDegistirmeTeknik("NormalYaz");
+                PlayerPrefs.SetInt("Pompali_Mermi", PlayerPrefs.GetInt("Pompali_Mermi") + mermisayisi);
                 break;
 
             case "Magnum":
@@ -268,7 +264,10 @@ public class Pompali : MonoBehaviour
                 break;
 
             case "Sniper":
-                PlayerPrefs.SetInt("Sniper_Mermi", PlayerPrefs.GetInt("Sniper_Mermi") + mermisayisi);
+                
+                ToplamMermiSayisi += mermisayisi;
+                PlayerPrefs.SetInt(SilahinAdi + "_Mermi", ToplamMermiSayisi);
+                SajorDegistirmeTeknik("NormalYaz");
                 break;
         }
 
