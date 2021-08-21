@@ -110,6 +110,7 @@ public class gun1 : MonoBehaviour
             MermiKaydet(other.transform.gameObject.GetComponent<MermiKutusu>().Olusan_Silahin_Turu,other.transform.gameObject.GetComponent<MermiKutusu>().Olusan_Mermi_Sayisi);
             Mermi_Kutusu_Olustur.MermiKutusuVarmi = false;
             Destroy(other.transform.parent.gameObject);
+            Debug.Log("Burda");
         }
     }
 

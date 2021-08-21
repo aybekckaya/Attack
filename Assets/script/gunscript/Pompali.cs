@@ -79,6 +79,7 @@ public class Pompali : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Burda");
         if (other.gameObject.CompareTag("Mermi"))
         {
             MermiKaydet(other.transform.gameObject.GetComponent<MermiKutusu>().Olusan_Silahin_Turu, other.transform.gameObject.GetComponent<MermiKutusu>().Olusan_Mermi_Sayisi);
@@ -104,8 +105,6 @@ public class Pompali : MonoBehaviour
     {
         if (ToplamMermiSayisi <= SarjorKapasitesi)
         {
-
-
             KalanMermi = ToplamMermiSayisi;
             ToplamMermiSayisi = 0;
             PlayerPrefs.SetInt(SilahinAdi + "_Mermi", 0);
