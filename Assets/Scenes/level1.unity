@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.43688485, g: 0.4845369, b: 0.5647929, a: 1}
+  m_IndirectSpecularColor: {r: 0.43688503, g: 0.4845369, b: 0.56479317, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -817,7 +817,7 @@ MonoBehaviour:
   MermiBitti: {fileID: 149801620}
   MermiAlmaSesi: {fileID: 149801622}
   AtesEfekt: {fileID: 1553707836}
-  "Mermi\u0130zi": {fileID: 198000012529019072, guid: 4edabb1c0dde62743b137378c7d22980, type: 3}
+  MermiIzi: {fileID: 0}
   KanEfekt: {fileID: 198000014159833656, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
   SarjorKapasitesi: 20
   KalanMermi: 20
@@ -2784,8 +2784,8 @@ MonoBehaviour:
   - {fileID: 436179272}
   - {fileID: 1766620642}
   - {fileID: 513547642}
-  Mermi_Kutusunun_Kendisi: {fileID: 745658892}
-  KutuCikmaSuresi: 0
+  Mermi_Kutusunun_Kendisi: {fileID: 880354496}
+  KutuCikmaSuresi: 5
 --- !u!1 &482989506
 GameObject:
   m_ObjectHideFlags: 0
@@ -6196,11 +6196,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &745658892 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1788957858764028600, guid: 2878cf97ab079d14c9de681866e9a6de, type: 3}
-  m_PrefabInstance: {fileID: 9091960067489536478}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &746010280 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: ed49ee3d893710a4e9c396aa38de2c0b, type: 3}
@@ -7703,7 +7698,7 @@ MonoBehaviour:
   MermiBitti: {fileID: 811859848}
   MermiAlmaSesi: {fileID: 811859846}
   AtesEfekt: {fileID: 1553707836}
-  "Mermi\u0130zi": {fileID: 198000012529019072, guid: 4edabb1c0dde62743b137378c7d22980, type: 3}
+  MermiIzi: {fileID: 0}
   KanEfekt: {fileID: 198000014159833656, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
   SarjorKapasitesi: 20
   KalanMermi: 20
@@ -8410,7 +8405,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 880354496}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.590622, y: -1.753109, z: 50.29784}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2019008395}
@@ -10792,7 +10787,7 @@ MonoBehaviour:
   MermiBitti: {fileID: 1246788817}
   MermiAlmaSesi: {fileID: 1246788818}
   AtesEfekt: {fileID: 1553707836}
-  "Mermi\u0130zi": {fileID: 198000012529019072, guid: 4edabb1c0dde62743b137378c7d22980, type: 3}
+  MermiIzi: {fileID: 0}
   KanEfekt: {fileID: 198000014159833656, guid: a3768c8a9d1b90d4bb0eb0e4bdbe730c, type: 3}
   SarjorKapasitesi: 20
   KalanMermi: 20
