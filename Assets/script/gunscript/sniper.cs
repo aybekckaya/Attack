@@ -13,6 +13,8 @@ public class sniper : MonoBehaviour
     float iceridenAtesEtmeSikligi;
     public float disaridanAtesEtmeSiklik;
     public float menzil;
+    public GameObject cross;
+    public GameObject scope;
 
     [Header("SESLER")]
     public AudioSource atesSesi;
@@ -39,6 +41,8 @@ public class sniper : MonoBehaviour
     [Header("OTHERS")]
     int AtilmisOlanMermi;
     public Camera myCam;
+    float CamFieldPov;
+    float ZoomPov = 20;
     Mermi_Kutusu_Olustur mermi_kutusu_kod;
     // Start is called before the first frame update
     void Start()
@@ -48,7 +52,7 @@ public class sniper : MonoBehaviour
         Baslangic_Mermi_Doldur();
         SajorDegistirmeTeknik("NormalYaz");
         Animatorum = GetComponent<Animator>();
-        mermi_kutusu_kod = GetComponent<Mermi_Kutusu_Olustur>();
+        CamFieldPov = myCam.fieldOfView;
     }
 
     // Update is called once per frame
@@ -77,7 +81,32 @@ public class sniper : MonoBehaviour
         {
             MermiAl();
         }
-
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            CamZoom(true);
+        }
+        if (Input.GetKeyUp(KeyCode.Mouse1))
+        {
+            CamZoom(false);
+            
+        }
+    }
+    void CamZoom(bool durum)
+    {
+        if (durum)
+        {
+            cross.SetActive(false);
+            Animatorum.SetBool("ZoomYap", durum);
+            myCam.fieldOfView = ZoomPov;
+            scope.SetActive(true);
+        }
+        else 
+        {
+            scope.SetActive(false);
+            Animatorum.SetBool("ZoomYap", durum);
+            myCam.fieldOfView = CamFieldPov;
+            cross.SetActive(true);
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -272,4 +301,5 @@ public class sniper : MonoBehaviour
         }
 
     }
+    
 }
