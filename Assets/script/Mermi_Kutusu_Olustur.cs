@@ -30,7 +30,7 @@ public class Mermi_Kutusu_Olustur : MonoBehaviour
             if (!MermiKutusuVarmi)
             {
                 int randomsayim = Random.Range(0, 4);
-                Instantiate(Mermi_Kutusunun_Kendisi, MermiKutusuPoint[0].transform.position, MermiKutusuPoint[0].transform.rotation);
+                Instantiate(Mermi_Kutusunun_Kendisi, MermiKutusuPoint[randomsayim].transform.position, MermiKutusuPoint[0].transform.rotation);
                 MermiKutusuVarmi = true;
             }
         }

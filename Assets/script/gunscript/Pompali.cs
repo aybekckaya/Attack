@@ -21,10 +21,10 @@ public class Pompali : MonoBehaviour
 
     [Header("EFECTS")]
     public ParticleSystem AtesEfekt;
-    public ParticleSystem Mermi›zi;
+    public ParticleSystem MermiIzi;
     public ParticleSystem KanEfekt;
 
-    [Header("S›LAH AYARLARI")]
+    [Header("S?LAH AYARLARI")]
     int ToplamMermiSayisi;
     public int SarjorKapasitesi;
     public int KalanMermi;
@@ -145,7 +145,7 @@ public class Pompali : MonoBehaviour
 
     void AtesEt()
     {
-        AtesEtmeTeknik›slem();
+        AtesEtmeTeknikIslem();
         RaycastHit hit;
 
         if (Physics.Raycast(myCam.transform.position, myCam.transform.forward, out hit, menzil))
@@ -159,11 +159,11 @@ public class Pompali : MonoBehaviour
                 Rigidbody rg = hit.transform.gameObject.GetComponent<Rigidbody>();
                 rg.AddForce(-hit.normal * 20f);
 
-                Instantiate(Mermi›zi, hit.point, Quaternion.LookRotation(hit.normal));
+                Instantiate(MermiIzi, hit.point, Quaternion.LookRotation(hit.normal));
             }
             else
             {
-                Instantiate(Mermi›zi, hit.point, Quaternion.LookRotation(hit.normal));
+                Instantiate(MermiIzi, hit.point, Quaternion.LookRotation(hit.normal));
             }
         }
 
@@ -230,7 +230,7 @@ public class Pompali : MonoBehaviour
         SarjorDegisme.Play();
 
     }
-    void AtesEtmeTeknik›slem()
+    void AtesEtmeTeknikIslem()
     {
         if (Kovan_ciksinmi)
         {
