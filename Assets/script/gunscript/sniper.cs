@@ -42,7 +42,7 @@ public class sniper : MonoBehaviour
     int AtilmisOlanMermi;
     public Camera myCam;
     float CamFieldPov;
-    float ZoomPov = 20;
+    public float ZoomPov ;
     Mermi_Kutusu_Olustur mermi_kutusu_kod;
     // Start is called before the first frame update
     void Start()
@@ -96,6 +96,7 @@ public class sniper : MonoBehaviour
         if (durum)
         {
             cross.SetActive(false);
+            myCam.cullingMask = ~(1 << 6);
             Animatorum.SetBool("ZoomYap", durum);
             myCam.fieldOfView = ZoomPov;
             scope.SetActive(true);
@@ -103,6 +104,7 @@ public class sniper : MonoBehaviour
         else 
         {
             scope.SetActive(false);
+            myCam.cullingMask = -1;
             Animatorum.SetBool("ZoomYap", durum);
             myCam.fieldOfView = CamFieldPov;
             cross.SetActive(true);

@@ -40,6 +40,9 @@ public class gun1 : MonoBehaviour
     [Header("OTHERS")]
     int AtilmisOlanMermi;
     public Camera myCam;
+    float CamFieldPov;
+    public float ZoomPov;
+
 
     Mermi_Kutusu_Olustur mermi_kutusu_kod;
     // Start is called before the first frame update
@@ -50,9 +53,9 @@ public class gun1 : MonoBehaviour
         Baslangic_Mermi_Doldur();
         SajorDegistirmeTeknik("NormalYaz");
         Animatorum = GetComponent<Animator>();
-        mermi_kutusu_kod = GetComponent<Mermi_Kutusu_Olustur>();
+        CamFieldPov = myCam.fieldOfView;
 
-        
+
     }
    
     // Update is called once per frame
@@ -80,6 +83,34 @@ public class gun1 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             MermiAl();
+        }
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            CamZoom(true);
+        }
+        if (Input.GetKeyUp(KeyCode.Mouse1))
+        {
+            CamZoom(false);
+
+        }
+    }
+    void CamZoom(bool durum)
+    {
+        if (durum)
+        {
+            
+           
+            Animatorum.SetBool("ZoomYap", durum);
+            myCam.fieldOfView = ZoomPov;
+            
+        }
+        else
+        {
+            
+            
+            Animatorum.SetBool("ZoomYap", durum);
+            myCam.fieldOfView = CamFieldPov;
+            
         }
     }
 
