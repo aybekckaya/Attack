@@ -86,32 +86,21 @@ public class gun1 : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
-            CamZoom(true);
+            Animatorum.SetBool("ZoomYap", true);
         }
         if (Input.GetKeyUp(KeyCode.Mouse1))
         {
-            CamZoom(false);
+            Animatorum.SetBool("ZoomYap",false);
+            myCam.fieldOfView = CamFieldPov;
 
         }
     }
-    void CamZoom(bool durum)
+    void CamZoom()
     {
-        if (durum)
-        {
-            
            
-            Animatorum.SetBool("ZoomYap", durum);
             myCam.fieldOfView = ZoomPov;
             
-        }
-        else
-        {
-            
-            
-            Animatorum.SetBool("ZoomYap", durum);
-            myCam.fieldOfView = CamFieldPov;
-            
-        }
+        
     }
 
     private void OnTriggerEnter(Collider other)
