@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameKontrol : MonoBehaviour
 { 
@@ -11,11 +12,15 @@ public class GameKontrol : MonoBehaviour
     public GameObject[] enemys;
     public GameObject[] CikisNoktalari;
     public GameObject[] HedefNoktalari;
+    public float DusmanCikmaSuresi;
+    [Header("Saglik Ayarlari")]
+    float Health=100;
+    public Image HealthBar;
     // Start is called before the first frame update
     void Start()
     {
 
-        
+        HealthBar.fillAmount = .5f;
         if (!PlayerPrefs.HasKey("OyunBasladiMi"))
        PlayerPrefs.SetInt("Taramali_Mermi", 70);
         PlayerPrefs.SetInt("Pompali_Mermi", 50);
@@ -29,7 +34,7 @@ public class GameKontrol : MonoBehaviour
     {
             while (true)
         {
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(DusmanCikmaSuresi);
             int enemy = Random.Range(0, 5);
             int CikisNoktasi = Random.Range(0, 2);
             int HedefNoktasi = Random.Range(0, 2);

@@ -30,6 +30,10 @@ public class Enemy : MonoBehaviour
             Dead();
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag)
+    }
     void Dead()
     {
        
