@@ -31,6 +31,8 @@ public class Pompali : MonoBehaviour
     public string SilahinAdi;
     public TextMeshProUGUI ToplamMermi_Text;
     public TextMeshProUGUI KalanMermi_Text;
+    bool ZoomVarMi;
+    bool ZoomAyar;
 
     public bool Kovan_ciksinmi;
     public GameObject Kovan_Objesi;
@@ -38,6 +40,9 @@ public class Pompali : MonoBehaviour
     [Header("OTHERS")]
     int AtilmisOlanMermi;
     public Camera myCam;
+    float CamFieldPov;
+    public float ZoomPov;
+
     Mermi_Kutusu_Olustur mermi_kutusu_kod;
     // Start is called before the first frame update
     void Start()
@@ -47,17 +52,17 @@ public class Pompali : MonoBehaviour
         Baslangic_Mermi_Doldur();
         SajorDegistirmeTeknik("NormalYaz");
         Animatorum = GetComponent<Animator>();
-        mermi_kutusu_kod = GetComponent<Mermi_Kutusu_Olustur>();
+        CamFieldPov = myCam.fieldOfView;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (Input.GetKey(KeyCode.Mouse0) && Input.GetKey(KeyCode.Mouse1))
         {
             if (atesEdebilirmi && Time.time > iceridenAtesEtmeSikligi && KalanMermi != 0)
             {
-                AtesEt();
+                AtesEt(false);
                 iceridenAtesEtmeSikligi = Time.time + disaridanAtesEtmeSiklik;
 
             }
@@ -76,6 +81,48 @@ public class Pompali : MonoBehaviour
         {
             MermiAl();
         }
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            ZoomVarMi = true;
+            Animatorum.SetBool("ZoomYap", true);
+        }
+        if (Input.GetKeyUp(KeyCode.Mouse1))
+        {
+            ZoomVarMi = false;
+            Animatorum.SetBool("ZoomYap", false);
+            myCam.fieldOfView = CamFieldPov;
+
+        }
+        if (ZoomVarMi)
+        {
+            if (Input.GetKey(KeyCode.Mouse0))
+            {
+                if (atesEdebilirmi && Time.time > iceridenAtesEtmeSikligi && KalanMermi != 0)
+                {
+                    AtesEt(true);
+                    iceridenAtesEtmeSikligi = Time.time + disaridanAtesEtmeSiklik;
+
+                }
+                if (KalanMermi == 0)
+                {
+                    MermiBitti.Play();
+                }
+
+            }
+            if (Input.GetKey(KeyCode.R))
+            {
+
+                StartCoroutine(ReloadYap());
+            }
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                MermiAl();
+            }
+        }
+    }
+    void CamZoom()
+    {
+        myCam.fieldOfView = ZoomPov;
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -142,9 +189,9 @@ public class Pompali : MonoBehaviour
     }
 
 
-    void AtesEt()
+    void AtesEt(bool ZoomAyar)
     {
-        AtesEtmeTeknikIslem();
+        AtesEtmeTeknikIslem(ZoomAyar);
         RaycastHit hit;
 
         if (Physics.Raycast(myCam.transform.position, myCam.transform.forward, out hit, menzil))
@@ -229,7 +276,7 @@ public class Pompali : MonoBehaviour
         SarjorDegisme.Play();
 
     }
-    void AtesEtmeTeknikIslem()
+    void AtesEtmeTeknikIslem(bool ZoomAyar)
     {
         if (Kovan_ciksinmi)
         {
@@ -239,7 +286,17 @@ public class Pompali : MonoBehaviour
         }
         atesSesi.Play();
         AtesEfekt.Play();
-        Animatorum.Play("pompaliates");
+        if (!ZoomAyar)
+        {
+            Animatorum.Play("pompaliates");
+            //ZoomAteset animasyon yap
+        }
+        else
+        {
+            Animatorum.Play("ZoomAteset");
+        }
+
+       
 
         KalanMermi--;
         KalanMermi_Text.text = KalanMermi.ToString();
