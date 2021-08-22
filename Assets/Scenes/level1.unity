@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 84cb878878d5440489c9fd4d0cd86b92, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: da9e7f6b235ff4445b2e12c54a5a8144, type: 2}
 --- !u!1 &10584969 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
@@ -342,6 +342,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: ea055b41d57bcfa4f933e17644a305ba, type: 3}
       propertyPath: m_TagString
       value: Yol
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ea055b41d57bcfa4f933e17644a305ba, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ea055b41d57bcfa4f933e17644a305ba, type: 3}
       propertyPath: m_RootOrder
@@ -609,6 +613,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Yol
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -814,6 +822,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Yol
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e21456eb7a6b18e4480b596463b9692a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e21456eb7a6b18e4480b596463b9692a, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -883,6 +895,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: c51050087ea26c14e952d5c3001ec5f7, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c51050087ea26c14e952d5c3001ec5f7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c51050087ea26c14e952d5c3001ec5f7, type: 3}
       propertyPath: m_RootOrder
@@ -957,17 +973,33 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_RootOrder
@@ -1428,6 +1460,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Yol
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1652,6 +1688,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e544891603a68eb41a8c40ea47764ab5, type: 3}
       propertyPath: m_TagString
       value: Yol
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e544891603a68eb41a8c40ea47764ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e544891603a68eb41a8c40ea47764ab5, type: 3}
       propertyPath: m_RootOrder
@@ -1888,6 +1928,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Yol
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 46aceb8c4fbd8a3478e3bb41629a9afd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 46aceb8c4fbd8a3478e3bb41629a9afd, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -2049,6 +2093,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Yol
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 46aceb8c4fbd8a3478e3bb41629a9afd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 46aceb8c4fbd8a3478e3bb41629a9afd, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -2109,6 +2157,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: ed49ee3d893710a4e9c396aa38de2c0b, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ed49ee3d893710a4e9c396aa38de2c0b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ed49ee3d893710a4e9c396aa38de2c0b, type: 3}
       propertyPath: m_RootOrder
@@ -2227,17 +2279,33 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_RootOrder
@@ -2317,6 +2385,7 @@ GameObject:
   - component: {fileID: 457572540}
   - component: {fileID: 457572539}
   - component: {fileID: 457572541}
+  - component: {fileID: 457572542}
   m_Layer: 0
   m_Name: GameKontrol
   m_TagString: Untagged
@@ -2336,6 +2405,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 639cdc1a035c8ab408ce81622483b7a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  guns:
+  - {fileID: 2072486054}
+  - {fileID: 1383058898}
+  - {fileID: 1335192873}
+  - {fileID: 1465813607}
+  DegisimSes: {fileID: 457572542}
+  enemys:
+  - {fileID: 3586577361396732787, guid: d208720362ecc624d9cee214f0202abc, type: 3}
+  - {fileID: 1528234544279211866, guid: 968d857bf19f7c04fa4d8282cbac09d7, type: 3}
+  - {fileID: 1184386618729497000, guid: a52fdea3e2a86fe41b714a8ec1a4f22a, type: 3}
+  - {fileID: 7200590500213925275, guid: 0f3182dbb79af484883eb03b15cc547f, type: 3}
+  - {fileID: 3338203542970325273, guid: 96b522d6847cd984bbd00e5493710261, type: 3}
+  CikisNoktalari:
+  - {fileID: 1423315340}
+  - {fileID: 1482373845}
+  HedefNoktalari:
+  - {fileID: 1173322730}
+  - {fileID: 1665404461}
 --- !u!4 &457572540
 Transform:
   m_ObjectHideFlags: 0
@@ -2348,7 +2435,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &457572541
 MonoBehaviour:
@@ -2370,6 +2457,102 @@ MonoBehaviour:
   - {fileID: 513547642}
   Mermi_Kutusunun_Kendisi: {fileID: 523780699435032579, guid: 89aa69c784ca640f4a4c197770cc729f, type: 3}
   KutuCikmaSuresi: 5
+--- !u!82 &457572542
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457572538}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3b0405f19635a294792003fde2e09a25, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &482989506
 GameObject:
   m_ObjectHideFlags: 0
@@ -2519,6 +2702,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c51050087ea26c14e952d5c3001ec5f7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c51050087ea26c14e952d5c3001ec5f7, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -2591,6 +2778,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e544891603a68eb41a8c40ea47764ab5, type: 3}
       propertyPath: m_TagString
       value: Yol
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e544891603a68eb41a8c40ea47764ab5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e544891603a68eb41a8c40ea47764ab5, type: 3}
       propertyPath: m_RootOrder
@@ -2668,7 +2859,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 513547642}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -45.4, y: -79.4, z: 90.8}
+  m_LocalPosition: {x: -21.8, y: -51, z: 29.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 182734090}
@@ -2722,6 +2913,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
       propertyPath: m_TagString
       value: Yol
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
       propertyPath: m_RootOrder
@@ -2927,17 +3122,33 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_RootOrder
@@ -3169,7 +3380,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &591222908
 Transform:
@@ -3401,17 +3612,33 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_RootOrder
@@ -3500,17 +3727,33 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_RootOrder
@@ -3799,17 +4042,33 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_RootOrder
@@ -4238,17 +4497,33 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_RootOrder
@@ -4331,6 +4606,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: ea055b41d57bcfa4f933e17644a305ba, type: 3}
       propertyPath: m_TagString
       value: Yol
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ea055b41d57bcfa4f933e17644a305ba, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ea055b41d57bcfa4f933e17644a305ba, type: 3}
       propertyPath: m_RootOrder
@@ -4419,17 +4698,33 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_RootOrder
@@ -4491,6 +4786,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e21456eb7a6b18e4480b596463b9692a, type: 3}
       propertyPath: m_TagString
       value: Yol
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e21456eb7a6b18e4480b596463b9692a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e21456eb7a6b18e4480b596463b9692a, type: 3}
       propertyPath: m_RootOrder
@@ -4768,7 +5067,7 @@ GameObject:
   m_TagString: Devrik
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &896620386
 Transform:
@@ -4926,17 +5225,33 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_RootOrder
@@ -4998,6 +5313,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 3ab888083d06e9b4b8a6eaa0568b5ac8, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3ab888083d06e9b4b8a6eaa0568b5ac8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3ab888083d06e9b4b8a6eaa0568b5ac8, type: 3}
       propertyPath: m_RootOrder
@@ -5434,7 +5753,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &971047235
 PrefabInstance:
@@ -5587,17 +5906,33 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_RootOrder
@@ -5686,6 +6021,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 86f783457a9659e41a99dc3147fefdba, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 86f783457a9659e41a99dc3147fefdba, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5763,6 +6102,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
       propertyPath: m_TagString
       value: Yol
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
       propertyPath: m_RootOrder
@@ -6145,17 +6488,33 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_RootOrder
@@ -6301,6 +6660,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c51050087ea26c14e952d5c3001ec5f7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c51050087ea26c14e952d5c3001ec5f7, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -6369,6 +6732,18 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 139e334bc86f2bb468ee8db25d7b8d70, type: 3}
       propertyPath: m_Name
       value: LampPost_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 139e334bc86f2bb468ee8db25d7b8d70, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 139e334bc86f2bb468ee8db25d7b8d70, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 139e334bc86f2bb468ee8db25d7b8d70, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 139e334bc86f2bb468ee8db25d7b8d70, type: 3}
       propertyPath: m_RootOrder
@@ -6447,6 +6822,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
       propertyPath: m_TagString
       value: Yol
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
       propertyPath: m_RootOrder
@@ -6761,6 +7140,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Yol
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e21456eb7a6b18e4480b596463b9692a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e21456eb7a6b18e4480b596463b9692a, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -6858,6 +7241,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1335192873 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4653511427186235735, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
+  m_PrefabInstance: {fileID: 4121816361371978637}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1337367400 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
@@ -7063,6 +7451,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Yol
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ea055b41d57bcfa4f933e17644a305ba, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ea055b41d57bcfa4f933e17644a305ba, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -7129,6 +7521,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Yol
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -7179,6 +7575,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
   m_PrefabInstance: {fileID: 1382226557}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1383058898 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4653511427296289181, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
+  m_PrefabInstance: {fileID: 4121816361371978637}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1383266162
 PrefabInstance:
@@ -7417,6 +7818,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1465813607 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4653511426890961341, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
+  m_PrefabInstance: {fileID: 4121816361371978637}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1473151201 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
@@ -7573,6 +7979,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: ed49ee3d893710a4e9c396aa38de2c0b, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ed49ee3d893710a4e9c396aa38de2c0b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ed49ee3d893710a4e9c396aa38de2c0b, type: 3}
       propertyPath: m_RootOrder
@@ -7930,7 +8340,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1597574531}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.43, y: -49.627, z: -44.6}
+  m_LocalPosition: {x: 33.43, y: -51.689, z: -44.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 182734090}
@@ -7969,17 +8379,33 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_RootOrder
@@ -8104,6 +8530,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
       propertyPath: m_TagString
       value: Yol
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
       propertyPath: m_RootOrder
@@ -8376,6 +8806,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Yol
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -8489,6 +8923,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Yol
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -8554,6 +8992,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 46aceb8c4fbd8a3478e3bb41629a9afd, type: 3}
       propertyPath: m_TagString
       value: Yol
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 46aceb8c4fbd8a3478e3bb41629a9afd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 46aceb8c4fbd8a3478e3bb41629a9afd, type: 3}
       propertyPath: m_RootOrder
@@ -8642,6 +9084,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Yol
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0880d9ac631f24f409114af2781b3480, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -8708,17 +9154,33 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_RootOrder
@@ -8817,7 +9279,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766620642}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.8, y: -68.6, z: 29.3}
+  m_LocalPosition: {x: -26.38, y: -51, z: 28.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 182734090}
@@ -8946,17 +9408,33 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_RootOrder
@@ -9184,7 +9662,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1815204455}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46.8, y: -67.8, z: -47.6}
+  m_LocalPosition: {x: -46.8, y: -50.778, z: -47.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 182734090}
@@ -9217,6 +9695,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 914351682f086b145ae6774edb5da09b, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 914351682f086b145ae6774edb5da09b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 914351682f086b145ae6774edb5da09b, type: 3}
       propertyPath: m_RootOrder
@@ -9295,6 +9777,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: ed49ee3d893710a4e9c396aa38de2c0b, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ed49ee3d893710a4e9c396aa38de2c0b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ed49ee3d893710a4e9c396aa38de2c0b, type: 3}
       propertyPath: m_RootOrder
@@ -9603,7 +10089,7 @@ GameObject:
   m_TagString: Devrik
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1894579444
 Transform:
@@ -9655,6 +10141,34 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 9a4548a096dcf0b4bbd08df5cac590a7, type: 3}
       propertyPath: m_Name
       value: LampPost_F
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9a4548a096dcf0b4bbd08df5cac590a7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 9a4548a096dcf0b4bbd08df5cac590a7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 9a4548a096dcf0b4bbd08df5cac590a7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 9a4548a096dcf0b4bbd08df5cac590a7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 9a4548a096dcf0b4bbd08df5cac590a7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 9a4548a096dcf0b4bbd08df5cac590a7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 9a4548a096dcf0b4bbd08df5cac590a7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9a4548a096dcf0b4bbd08df5cac590a7, type: 3}
       propertyPath: m_RootOrder
@@ -9781,17 +10295,33 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_RootOrder
@@ -9948,6 +10478,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: c51050087ea26c14e952d5c3001ec5f7, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c51050087ea26c14e952d5c3001ec5f7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c51050087ea26c14e952d5c3001ec5f7, type: 3}
       propertyPath: m_RootOrder
@@ -10542,17 +11076,33 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
       objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_TagString
       value: Devrik
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
       propertyPath: m_RootOrder
@@ -10642,6 +11192,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &2072486054 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4121816360402453217, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
+  m_PrefabInstance: {fileID: 4121816361371978637}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2079342054 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100006, guid: 859c228a1a8fbe4439ce250eabda57aa, type: 3}
@@ -10677,6 +11232,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e21456eb7a6b18e4480b596463b9692a, type: 3}
       propertyPath: m_TagString
       value: Yol
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e21456eb7a6b18e4480b596463b9692a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e21456eb7a6b18e4480b596463b9692a, type: 3}
       propertyPath: m_RootOrder
@@ -10915,6 +11474,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Yol
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ea055b41d57bcfa4f933e17644a305ba, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ea055b41d57bcfa4f933e17644a305ba, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -10975,6 +11538,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 46aceb8c4fbd8a3478e3bb41629a9afd, type: 3}
       propertyPath: m_TagString
       value: Yol
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 46aceb8c4fbd8a3478e3bb41629a9afd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 46aceb8c4fbd8a3478e3bb41629a9afd, type: 3}
       propertyPath: m_RootOrder
@@ -11245,6 +11812,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 539922620}
     - target: {fileID: 149801619, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
+      propertyPath: MermiIzi
+      value: 
+      objectReference: {fileID: 198000012529019072, guid: 4edabb1c0dde62743b137378c7d22980, type: 3}
+    - target: {fileID: 149801619, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
+      propertyPath: DarbeGucu
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 149801619, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
       propertyPath: KalanMermi_Text
       value: 
       objectReference: {fileID: 1893913271}
@@ -11255,6 +11830,14 @@ PrefabInstance:
     - target: {fileID: 811859845, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
       propertyPath: ZoomPov
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 811859845, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
+      propertyPath: MermiIzi
+      value: 
+      objectReference: {fileID: 198000012529019072, guid: 4edabb1c0dde62743b137378c7d22980, type: 3}
+    - target: {fileID: 811859845, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
+      propertyPath: DarbeGucu
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 811859845, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
       propertyPath: KalanMermi_Text
@@ -11272,6 +11855,10 @@ PrefabInstance:
       propertyPath: MermiIzi
       value: 
       objectReference: {fileID: 198000012529019072, guid: 4edabb1c0dde62743b137378c7d22980, type: 3}
+    - target: {fileID: 1246788819, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
+      propertyPath: DarbeGucu
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 1246788819, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
       propertyPath: SilahinAdi
       value: taramali
@@ -11383,6 +11970,10 @@ PrefabInstance:
     - target: {fileID: 4121816360402453217, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121816360402453219, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
+      propertyPath: DarbeGucu
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4121816360402453219, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
       propertyPath: KalanMermi
@@ -11575,6 +12166,10 @@ PrefabInstance:
     - target: {fileID: 4653511426890961341, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653511427186235735, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4653511427296289178, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
       propertyPath: m_LocalPosition.x

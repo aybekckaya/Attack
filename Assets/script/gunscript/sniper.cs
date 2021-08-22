@@ -34,6 +34,7 @@ public class sniper : MonoBehaviour
     public string SilahinAdi;
     public TextMeshProUGUI ToplamMermi_Text;
     public TextMeshProUGUI KalanMermi_Text;
+    public float DarbeGucu;
 
     public bool Kovan_ciksinmi;
     public GameObject Kovan_Objesi;
@@ -184,6 +185,7 @@ public class sniper : MonoBehaviour
             if (hit.transform.gameObject.CompareTag("Enemy"))
             {
                 Instantiate(KanEfekt, hit.point, Quaternion.LookRotation(hit.normal));
+                hit.transform.gameObject.GetComponent<Enemy>().DarbeAl( DarbeGucu);
             }
             else if (hit.transform.gameObject.CompareTag("Devrik"))
             {

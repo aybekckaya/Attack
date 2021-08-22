@@ -34,6 +34,7 @@ public class magnum : MonoBehaviour
     public TextMeshProUGUI KalanMermi_Text;
     bool ZoomVarMi;
     bool ZoomAyar;
+    public float DarbeGucu;
 
     public bool Kovan_ciksinmi;
     public GameObject Kovan_Objesi;
@@ -59,7 +60,7 @@ public class magnum : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Mouse0) && Input.GetKey(KeyCode.Mouse1))
+        if (Input.GetKey(KeyCode.Mouse0) && !Input.GetKey(KeyCode.Mouse1))
         {
             if (atesEdebilirmi && Time.time > iceridenAtesEtmeSikligi && KalanMermi != 0)
             {
@@ -199,6 +200,7 @@ public class magnum : MonoBehaviour
             if (hit.transform.gameObject.CompareTag("Enemy"))
             {
                 Instantiate(KanEfekt, hit.point, Quaternion.LookRotation(hit.normal));
+                hit.transform.gameObject.GetComponent<Enemy>().DarbeAl(DarbeGucu);
             }
             else if (hit.transform.gameObject.CompareTag("Devrik"))
             {
