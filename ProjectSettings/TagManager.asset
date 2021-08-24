@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Yol
   - Mermi
+  - korunanNesne
+  - AnaKontrolcum
   layers:
   - Default
   - TransparentFX

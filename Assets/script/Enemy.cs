@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     NavMeshAgent ajan;
      GameObject hedef;
     public float health;
+    public float DusmanDarbeGucu;
     void Start()
     {
         ajan = GetComponent<NavMeshAgent>();
@@ -32,7 +33,13 @@ public class Enemy : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag)
+        if (other.gameObject.CompareTag("korunanNesne"))
+        {
+            Debug.Log("degdi");
+            GameObject anaKontrolcum = GameObject.FindWithTag("AnaKontrolcum");
+            anaKontrolcum.GetComponent<GameKontrol>().Darbeal(DusmanDarbeGucu);
+            Dead();
+        }
     }
     void Dead()
     {

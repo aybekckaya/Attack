@@ -16,11 +16,13 @@ public class GameKontrol : MonoBehaviour
     [Header("Saglik Ayarlari")]
     float Health=100;
     public Image HealthBar;
+    [Header("Diðer Ayarlar")]
+    public GameObject GameOverCanvas;
     // Start is called before the first frame update
     void Start()
     {
 
-        HealthBar.fillAmount = .5f;
+       
         if (!PlayerPrefs.HasKey("OyunBasladiMi"))
        PlayerPrefs.SetInt("Taramali_Mermi", 70);
         PlayerPrefs.SetInt("Pompali_Mermi", 50);
@@ -29,7 +31,12 @@ public class GameKontrol : MonoBehaviour
         PlayerPrefs.SetInt("OyunBasladiMi", 1);
         StartCoroutine(DusmanYap());
     }
-     
+
+    internal void Darbeal(object darbeGucu)
+    {
+        throw new System.NotImplementedException();
+    }
+
     IEnumerator DusmanYap()
     {
             while (true)
@@ -63,6 +70,20 @@ public class GameKontrol : MonoBehaviour
         {
             SilahDegistir(3);
         }
+    }
+    public void Darbeal(float DarbeGucu)
+    {
+        Health -= DarbeGucu;
+        HealthBar.fillAmount = Health/100;
+        if (Health <= 0)
+        {
+            GameOver();
+        }
+    }
+    void GameOver()
+    {
+        GameOverCanvas.SetActive(true);
+        Time.timeScale = 0;
     }
     void SilahDegistir(int SiraNo)
     {
