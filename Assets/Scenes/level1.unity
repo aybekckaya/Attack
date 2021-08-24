@@ -2576,7 +2576,7 @@ MonoBehaviour:
   - {fileID: 1173322730}
   - {fileID: 1665404461}
   DusmanCikmaSuresi: 4
-  HealthBar: {fileID: 784019781}
+  HealthBar: {fileID: 1363099031}
   GameOverCanvas: {fileID: 126404579}
 --- !u!4 &457572540
 Transform:
