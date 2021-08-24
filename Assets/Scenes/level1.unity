@@ -12954,6 +12954,10 @@ PrefabInstance:
       value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 149801619, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
+      propertyPath: SilahinAdi
+      value: Sniper
+      objectReference: {fileID: 0}
+    - target: {fileID: 149801619, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
       propertyPath: KalanMermi_Text
       value: 
       objectReference: {fileID: 1893913271}
@@ -12974,9 +12978,21 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 811859845, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
+      propertyPath: KalanMermi
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 811859845, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
+      propertyPath: SilahinAdi
+      value: Magnum
+      objectReference: {fileID: 0}
+    - target: {fileID: 811859845, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
       propertyPath: KalanMermi_Text
       value: 
       objectReference: {fileID: 1893913271}
+    - target: {fileID: 811859845, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
+      propertyPath: SarjorKapasitesi
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 811859845, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
       propertyPath: ToplamMermi_Text
       value: 
@@ -12995,7 +13011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1246788819, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
       propertyPath: SilahinAdi
-      value: taramali
+      value: Pompali
       objectReference: {fileID: 0}
     - target: {fileID: 1246788819, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
       propertyPath: KalanMermi_Text
@@ -13112,6 +13128,10 @@ PrefabInstance:
     - target: {fileID: 4121816360402453219, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
       propertyPath: KalanMermi
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121816360402453219, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
+      propertyPath: SilahinAdi
+      value: Taramali
       objectReference: {fileID: 0}
     - target: {fileID: 4121816360402453219, guid: 6b3062cf9dc17224fa4b410497c577dc, type: 3}
       propertyPath: KalanMermi_Text

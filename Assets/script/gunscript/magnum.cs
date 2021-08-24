@@ -50,6 +50,8 @@ public class magnum : MonoBehaviour
     void Start()
     {
         ToplamMermiSayisi = PlayerPrefs.GetInt(SilahinAdi + "_Mermi");
+        Debug.Log(ToplamMermiSayisi);
+
         Kovan_ciksinmi = false;
         Baslangic_Mermi_Doldur();
         SajorDegistirmeTeknik("NormalYaz");

@@ -16,19 +16,27 @@ public class GameKontrol : MonoBehaviour
     [Header("Saglik Ayarlari")]
     float Health=100;
     public Image HealthBar;
-    [Header("Diðer Ayarlar")]
+    [Header("Di?er Ayarlar")]
     public GameObject GameOverCanvas;
     // Start is called before the first frame update
     void Start()
     {
-
-       
-        if (!PlayerPrefs.HasKey("OyunBasladiMi"))
-       PlayerPrefs.SetInt("Taramali_Mermi", 70);
-        PlayerPrefs.SetInt("Pompali_Mermi", 50);
-        PlayerPrefs.SetInt("Magnum_Mermi", 30);
-        PlayerPrefs.SetInt("Sniper_Mermi", 20); 
-        PlayerPrefs.SetInt("OyunBasladiMi", 1);
+        if (PlayerPrefs.HasKey("OyunBasladiMi"))
+        {
+            PlayerPrefs.SetInt("Taramali_Mermi", 70);
+            PlayerPrefs.SetInt("Pompali_Mermi", 50);
+            PlayerPrefs.SetInt("Magnum_Mermi", 30);
+            PlayerPrefs.SetInt("Sniper_Mermi", 20);
+            //PlayerPrefs.SetInt("OyunBasladiMi", 1);
+        }
+        //if (!PlayerPrefs.HasKey("OyunBasladiMi"))
+        //{
+        //    PlayerPrefs.SetInt("Taramali_Mermi", 70);
+        //    PlayerPrefs.SetInt("Pompali_Mermi", 50);
+        //    PlayerPrefs.SetInt("Magnum_Mermi", 30);
+        //    PlayerPrefs.SetInt("Sniper_Mermi", 20);
+        //    PlayerPrefs.SetInt("OyunBasladiMi", 1);
+        //}
         StartCoroutine(DusmanYap());
     }
 
