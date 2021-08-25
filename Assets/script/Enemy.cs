@@ -9,9 +9,11 @@ public class Enemy : MonoBehaviour
      GameObject hedef;
     public float health;
     public float DusmanDarbeGucu;
+    GameObject anaKontrolcum;
     void Start()
     {
         ajan = GetComponent<NavMeshAgent>();
+        GameObject anaKontrolcum = GameObject.FindWithTag("AnaKontrolcum");
     }
     public void HedefBelirle(GameObject objem)
     {
@@ -35,15 +37,15 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.CompareTag("korunanNesne"))
         {
-            Debug.Log("degdi");
-            GameObject anaKontrolcum = GameObject.FindWithTag("AnaKontrolcum");
+           
+            
             anaKontrolcum.GetComponent<GameKontrol>().Darbeal(DusmanDarbeGucu);
             Dead();
         }
     }
     void Dead()
     {
-       
+        anaKontrolcum.GetComponent<GameKontrol>().DusmanSayisiGuncelle();
         Destroy(gameObject);
 
     }

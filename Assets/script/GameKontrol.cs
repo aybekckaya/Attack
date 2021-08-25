@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,14 +14,20 @@ public class GameKontrol : MonoBehaviour
     public GameObject[] CikisNoktalari;
     public GameObject[] HedefNoktalari;
     public float DusmanCikmaSuresi;
+    public int BaslangýcDusmanSayisi;
+    public static int KalanDusmanSayisi;
+    public TextMeshProUGUI KalanDusman_text;
     [Header("Saglik Ayarlari")]
     float Health=100;
     public Image HealthBar;
     [Header("Di?er Ayarlar")]
     public GameObject GameOverCanvas;
+    public GameObject WinCanvas;
     // Start is called before the first frame update
     void Start()
     {
+        KalanDusman_text.text = BaslangýcDusmanSayisi.ToString();
+        KalanDusmanSayisi = BaslangýcDusmanSayisi;
         if (PlayerPrefs.HasKey("OyunBasladiMi"))
         {
             PlayerPrefs.SetInt("Taramali_Mermi", 70);
@@ -50,14 +57,33 @@ public class GameKontrol : MonoBehaviour
             while (true)
         {
             yield return new WaitForSeconds(DusmanCikmaSuresi);
-            int enemy = Random.Range(0, 5);
-            int CikisNoktasi = Random.Range(0, 2);
-            int HedefNoktasi = Random.Range(0, 2);
+            if (BaslangýcDusmanSayisi!=0)
+            {
+                int enemy = Random.Range(0, 5);
+                int CikisNoktasi = Random.Range(0, 2);
+                int HedefNoktasi = Random.Range(0, 2);
 
-            GameObject obje = Instantiate(enemys[enemy], CikisNoktalari[CikisNoktasi].transform.position, Quaternion.identity);
-            obje.GetComponent<Enemy>().HedefBelirle(HedefNoktalari[HedefNoktasi]);
+                GameObject obje = Instantiate(enemys[enemy], CikisNoktalari[CikisNoktasi].transform.position, Quaternion.identity);
+                obje.GetComponent<Enemy>().HedefBelirle(HedefNoktalari[HedefNoktasi]);
+                BaslangýcDusmanSayisi--;
+            }
+            
         }
 
+    }
+    public void DusmanSayisiGuncelle()
+    {
+        KalanDusmanSayisi--;
+        if (KalanDusmanSayisi <= 0)
+        {
+            WinCanvas.SetActive(true);
+            KalanDusman_text.text ="0";
+            Time.timeScale = 0;
+        }
+        else
+        {
+            KalanDusman_text.text = KalanDusmanSayisi.ToString();
+        }
     }
     // Update is called once per frame
     void Update()

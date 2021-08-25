@@ -210,6 +210,7 @@ public class gun1 : MonoBehaviour
             {
                 Instantiate(KanEfekt, hit.point, Quaternion.LookRotation(hit.normal));
                 hit.transform.gameObject.GetComponent<Enemy>().DarbeAl(DarbeGucu);
+                GameKontrol.KalanDusmanSayisi--;
             }
             else if (hit.transform.gameObject.CompareTag("Devrik"))
             {

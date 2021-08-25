@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77068981a5d1cab4c82e4baf92b63b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 80
+  health: 20
   DusmanDarbeGucu: 8
 --- !u!54 &-964937169447852132
 Rigidbody:
