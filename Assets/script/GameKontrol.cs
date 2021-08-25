@@ -71,6 +71,12 @@ public class GameKontrol : MonoBehaviour
         }
 
     }
+
+    public void KillEnemy(GameObject enemy)
+    {
+        Destroy(enemy);
+    }
+
     public void DusmanSayisiGuncelle()
     {
         KalanDusmanSayisi--;

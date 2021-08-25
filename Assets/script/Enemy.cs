@@ -44,6 +44,6 @@ public class Enemy : MonoBehaviour
     void Dead()
     {
         anaKontrolcum.GetComponent<GameKontrol>().DusmanSayisiGuncelle();
-        //Destroy(this);
+        anaKontrolcum.GetComponent<GameKontrol>().KillEnemy(gameObject);
     }
 }
