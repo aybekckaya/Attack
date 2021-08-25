@@ -14,7 +14,7 @@ public class GameKontrol : MonoBehaviour
     public GameObject[] CikisNoktalari;
     public GameObject[] HedefNoktalari;
     public float DusmanCikmaSuresi;
-    public int BaslangýcDusmanSayisi;
+    public int BaslangicDusmanSayisi;
     public static int KalanDusmanSayisi;
     public TextMeshProUGUI KalanDusman_text;
     [Header("Saglik Ayarlari")]
@@ -26,8 +26,8 @@ public class GameKontrol : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        KalanDusman_text.text = BaslangýcDusmanSayisi.ToString();
-        KalanDusmanSayisi = BaslangýcDusmanSayisi;
+        KalanDusman_text.text = BaslangicDusmanSayisi.ToString();
+        KalanDusmanSayisi = BaslangicDusmanSayisi;
         if (PlayerPrefs.HasKey("OyunBasladiMi"))
         {
             PlayerPrefs.SetInt("Taramali_Mermi", 70);
@@ -57,7 +57,7 @@ public class GameKontrol : MonoBehaviour
             while (true)
         {
             yield return new WaitForSeconds(DusmanCikmaSuresi);
-            if (BaslangýcDusmanSayisi!=0)
+            if (BaslangicDusmanSayisi!=0)
             {
                 int enemy = Random.Range(0, 5);
                 int CikisNoktasi = Random.Range(0, 2);
@@ -65,7 +65,7 @@ public class GameKontrol : MonoBehaviour
 
                 GameObject obje = Instantiate(enemys[enemy], CikisNoktalari[CikisNoktasi].transform.position, Quaternion.identity);
                 obje.GetComponent<Enemy>().HedefBelirle(HedefNoktalari[HedefNoktasi]);
-                BaslangýcDusmanSayisi--;
+                BaslangicDusmanSayisi--;
             }
             
         }

@@ -202,7 +202,7 @@ public class magnum : MonoBehaviour
             if (hit.transform.gameObject.CompareTag("Enemy"))
             {
                 Instantiate(KanEfekt, hit.point, Quaternion.LookRotation(hit.normal));
-                hit.transform.gameObject.GetComponent<Enemy>().DarbeAl(DarbeGucu);
+                hit.transform.GetComponent<Enemy>().DarbeAl(DarbeGucu);
             }
             else if (hit.transform.gameObject.CompareTag("Devrik"))
             {

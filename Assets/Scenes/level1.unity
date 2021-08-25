@@ -2808,9 +2808,9 @@ MonoBehaviour:
   - {fileID: 1173322730}
   - {fileID: 1665404461}
   DusmanCikmaSuresi: 4
-  "Baslang\u0131cDusmanSayisi": 4
+  BaslangicDusmanSayisi: 10
   KalanDusman_text: {fileID: 1342120455}
-  HealthBar: {fileID: 784019781}
+  HealthBar: {fileID: 1363099031}
   GameOverCanvas: {fileID: 126404579}
   WinCanvas: {fileID: 981003251}
 --- !u!4 &457572540
@@ -3572,7 +3572,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: -8.237793}
+  m_AnchoredPosition: {x: 0, y: -8.237793}
   m_SizeDelta: {x: 0, y: 16.4754}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &539922622
@@ -9292,7 +9292,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32.35
+  m_fontSize: 18
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1

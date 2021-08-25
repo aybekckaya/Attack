@@ -6,14 +6,14 @@ using UnityEngine.AI;
 public class Enemy : MonoBehaviour
 {
     NavMeshAgent ajan;
-     GameObject hedef;
+    GameObject hedef;
     public float health;
     public float DusmanDarbeGucu;
     GameObject anaKontrolcum;
     void Start()
     {
         ajan = GetComponent<NavMeshAgent>();
-        GameObject anaKontrolcum = GameObject.FindWithTag("AnaKontrolcum");
+        anaKontrolcum = GameObject.FindWithTag("AnaKontrolcum");
     }
     public void HedefBelirle(GameObject objem)
     {
@@ -37,8 +37,6 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.CompareTag("korunanNesne"))
         {
-           
-            
             anaKontrolcum.GetComponent<GameKontrol>().Darbeal(DusmanDarbeGucu);
             Dead();
         }
@@ -46,7 +44,6 @@ public class Enemy : MonoBehaviour
     void Dead()
     {
         anaKontrolcum.GetComponent<GameKontrol>().DusmanSayisiGuncelle();
-        Destroy(gameObject);
-
+        //Destroy(this);
     }
 }
