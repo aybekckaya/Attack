@@ -2796,11 +2796,11 @@ MonoBehaviour:
   - {fileID: 1465813607}
   DegisimSes: {fileID: 457572542}
   enemys:
-  - {fileID: 3586577361396732787, guid: d208720362ecc624d9cee214f0202abc, type: 3}
-  - {fileID: 1528234544279211866, guid: 968d857bf19f7c04fa4d8282cbac09d7, type: 3}
-  - {fileID: 1184386618729497000, guid: a52fdea3e2a86fe41b714a8ec1a4f22a, type: 3}
-  - {fileID: 7200590500213925275, guid: 0f3182dbb79af484883eb03b15cc547f, type: 3}
-  - {fileID: 3338203542970325273, guid: 96b522d6847cd984bbd00e5493710261, type: 3}
+  - {fileID: 877877380374649560, guid: 1a6d8ad449c1aba44b7a292e41a061d1, type: 3}
+  - {fileID: 6341238980365068639, guid: 9b6b918f4c1adbf4d9642af5813c3927, type: 3}
+  - {fileID: 8512752510006284071, guid: 738cc64363ad1b64d8136fc6334463e2, type: 3}
+  - {fileID: 7342897697249573481, guid: 7f2442f80a138ae4d95dfdd41b349456, type: 3}
+  - {fileID: 2840008429765010323, guid: 15d40a8a09b165645b80fc08439ebd50, type: 3}
   CikisNoktalari:
   - {fileID: 1423315340}
   - {fileID: 1482373845}
