@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameKontrol : MonoBehaviour
@@ -133,5 +134,14 @@ public class GameKontrol : MonoBehaviour
             gun.SetActive(false);
         }
         guns[SiraNo].SetActive(true);
+    }
+    public void BastanBasla()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void SaglikDoldur()
+    {
+        Health = 100;
+        HealthBar.fillAmount = Health / 100;
     }
 }
