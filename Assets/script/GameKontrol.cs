@@ -144,4 +144,8 @@ public class GameKontrol : MonoBehaviour
         Health = 100;
         HealthBar.fillAmount = Health / 100;
     }
+   public void AnaMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
