@@ -121,6 +121,12 @@ public class GameKontrol : MonoBehaviour
             GameOver();
         }
     }
+
+    public void SaglikAl() 
+    {
+        Health += 10f;
+        HealthBar.fillAmount = Health / 100;
+    }
     void GameOver()
     {
         GameOverCanvas.SetActive(true);
