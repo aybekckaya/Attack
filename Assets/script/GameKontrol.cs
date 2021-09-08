@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class GameKontrol : MonoBehaviour
 { 
@@ -24,6 +25,9 @@ public class GameKontrol : MonoBehaviour
     [Header("Di?er Ayarlar")]
     public GameObject GameOverCanvas;
     public GameObject WinCanvas;
+    public GameObject PauseCanvas;
+    public AudioSource OyuniciSes;
+    public static bool OyunDurduMu;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +50,8 @@ public class GameKontrol : MonoBehaviour
         //    PlayerPrefs.SetInt("OyunBasladiMi", 1);
         //}
         StartCoroutine(DusmanYap());
+        OyuniciSes = GetComponent<AudioSource>();
+        OyuniciSes.Play();
     }
 
     internal void Darbeal(object darbeGucu)
@@ -95,21 +101,26 @@ public class GameKontrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1) && !OyunDurduMu)
         {
             SilahDegistir(0);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2) && !OyunDurduMu)
         {
             SilahDegistir(1);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha3) && !OyunDurduMu)
         {
             SilahDegistir(2);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
+        if (Input.GetKeyDown(KeyCode.Alpha4) && !OyunDurduMu)
         {
             SilahDegistir(3);
+        }
+        if (Input.GetKeyDown(KeyCode.Escape) && !OyunDurduMu)
+        {
+            Pause();
+
         }
     }
     public void Darbeal(float DarbeGucu)
@@ -131,6 +142,10 @@ public class GameKontrol : MonoBehaviour
     {
         GameOverCanvas.SetActive(true);
         Time.timeScale = 0;
+        OyunDurduMu = true;
+        Cursor.visible = true;
+        GameObject.FindWithTag("Player").GetComponent<FirstPersonController>().m_MouseLook.lockCursor = false;
+        Cursor.lockState = CursorLockMode.None;
     }
     void SilahDegistir(int SiraNo)
     {
@@ -144,13 +159,36 @@ public class GameKontrol : MonoBehaviour
     public void BastanBasla()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
+        OyunDurduMu = false;
+        Cursor.visible = false;
+        GameObject.FindWithTag("Player").GetComponent<FirstPersonController>().m_MouseLook.lockCursor = true;
+        Cursor.lockState = CursorLockMode.Locked;
     }
     public void SaglikDoldur()
     {
         Health = 100;
         HealthBar.fillAmount = Health / 100;
     }
-   public void AnaMenu()
+    public void Pause()
+    {
+        PauseCanvas.SetActive(true);
+        Time.timeScale = 0;
+        OyunDurduMu = true;
+        Cursor.visible = true;
+        GameObject.FindWithTag("Player").GetComponent<FirstPersonController>().m_MouseLook.lockCursor = false;
+        Cursor.lockState = CursorLockMode.None;
+    }
+    public void DevamEt()
+    {
+        PauseCanvas.SetActive(false);
+        Time.timeScale = 1;
+        OyunDurduMu = false;
+        Cursor.visible = false;
+        GameObject.FindWithTag("Player").GetComponent<FirstPersonController>().m_MouseLook.lockCursor = true;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+    public void AnaMenu()
     {
         SceneManager.LoadScene(0);
     }
