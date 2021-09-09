@@ -1,12 +1,32 @@
 fileFormatVersion: 2
-guid: 973de6ac3671b0d49b3e5cef1b82056e
+guid: 50b14f19fc372404ca7923b00066cd60
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ZombieGirl_Material
+    second: {fileID: 2100000, guid: 59abb9c0c6e27a5458f8425e9cd41be2, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: zombie_diffuse
+    second: {fileID: 2800000, guid: 80a41ecb7b8ceb84a8c62b475ace8888, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: zombie_normal
+    second: {fileID: 2800000, guid: f8fa2d284cc39bc4398a7edcf83018b7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: zombie_specular
+    second: {fileID: 2800000, guid: b7a651e77060ec44aae73188881db2a5, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

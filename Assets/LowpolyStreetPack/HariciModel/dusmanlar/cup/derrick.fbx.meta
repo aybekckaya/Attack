@@ -1,12 +1,37 @@
 fileFormatVersion: 2
-guid: 82bca96a471099c46887c576293b1649
+guid: 34084d9cf7b28374481dce8ba464dcd6
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Face_Police_Zombie_MAT
+    second: {fileID: 2100000, guid: af0d20db99612214d81d562f81f95f3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Police_Zombie_MAT
+    second: {fileID: 2100000, guid: ba1defe7b6db3b344a060c91e359eb51, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Police Zombie_diffuse
+    second: {fileID: 2800000, guid: 571a554abc0bd8b4ebb0574a43e747cf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Police Zombie_normal
+    second: {fileID: 2800000, guid: 57226734853a2ad4bbfcd5dec24b43aa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Police Zombie_specular
+    second: {fileID: 2800000, guid: 082946754545df840886e38a1db94e3c, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

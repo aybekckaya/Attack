@@ -1,12 +1,32 @@
 fileFormatVersion: 2
-guid: dc5543949d0895a4f8c41ce494dfe3a2
+guid: ebfba9a991d256f4594df5f2afa88058
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WorldWar_zombie_material
+    second: {fileID: 2100000, guid: 738678bd10533574d8db39d402274398, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: world_war_zombie_diffuse
+    second: {fileID: 2800000, guid: 21dfd1614f36ab548ac2cedb7702e1d2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: world_war_zombie_normal
+    second: {fileID: 2800000, guid: 3f2961f8a2e11f14d9bcaeea9439c193, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: world_war_zombie_specular
+    second: {fileID: 2800000, guid: c7e16249cc238654798e70c34bedf82d, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
