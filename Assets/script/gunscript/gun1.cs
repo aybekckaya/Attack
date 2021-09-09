@@ -66,17 +66,19 @@ public class gun1 : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Mouse0)&& !Input.GetKey(KeyCode.Mouse1))
         {
-            if (atesEdebilirmi && Time.time > iceridenAtesEtmeSikligi && KalanMermi != 0)
-            {
-                AtesEt(false);
-                iceridenAtesEtmeSikligi = Time.time + disaridanAtesEtmeSiklik;
+          
+                if (atesEdebilirmi && Time.time > iceridenAtesEtmeSikligi && KalanMermi != 0)
+                {
+                if (!GameKontrol.OyunDurduMu) { 
+                    AtesEt(false);
+                    iceridenAtesEtmeSikligi = Time.time + disaridanAtesEtmeSiklik;
 
-            }
-            if (KalanMermi == 0)
-            {
-                MermiBitti.Play();
-            }
-
+                }}
+                if (KalanMermi == 0)
+                {
+                    MermiBitti.Play();
+                }
+            
         }
         if (Input.GetKey(KeyCode.R))
         {
