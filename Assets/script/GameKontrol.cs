@@ -26,7 +26,8 @@ public class GameKontrol : MonoBehaviour
     public GameObject GameOverCanvas;
     public GameObject WinCanvas;
     public GameObject PauseCanvas;
-    public static bool OyunDurduMu; 
+    public static bool OyunDurduMu;
+    public AudioSource Oyunses;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +51,8 @@ public class GameKontrol : MonoBehaviour
         //    PlayerPrefs.SetInt("OyunBasladiMi", 1);
         //}
         StartCoroutine(DusmanYap());
+        Oyunses = GetComponent<AudioSource>();
+        Oyunses.Play();
     }
 
     internal void Darbeal(object darbeGucu)
@@ -64,7 +67,7 @@ public class GameKontrol : MonoBehaviour
             yield return new WaitForSeconds(DusmanCikmaSuresi);
             if (BaslangicDusmanSayisi!=0)
             {
-                int enemy = Random.Range(0, 5);
+                int enemy = Random.Range(0, 4);
                 int CikisNoktasi = Random.Range(0, 2);
                 int HedefNoktasi = Random.Range(0, 2);
 
