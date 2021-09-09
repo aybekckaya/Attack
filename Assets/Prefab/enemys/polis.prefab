@@ -195,6 +195,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3385485529881204575}
+  - component: {fileID: 4293679992654557210}
   m_Layer: 0
   m_Name: Spine
   m_TagString: Untagged
@@ -217,6 +218,25 @@ Transform:
   m_Father: {fileID: 5995322724998526188}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &4293679992654557210
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754296627737652348}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 272933f5142556d49ad2a45b3db07a54, type: 3}
+  m_Controller: {fileID: 9100000, guid: 66e76a01b0f56de44a01b99ea14cb6ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &754983789099200993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1599,6 +1619,7 @@ GameObject:
   - component: {fileID: 5818009751780188801}
   - component: {fileID: 7805457485561531938}
   - component: {fileID: 4177361956876985677}
+  - component: {fileID: 4523241845040845126}
   m_Layer: 0
   m_Name: polis
   m_TagString: Enemy
@@ -1788,6 +1809,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &4523241845040845126
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6341238980365068639}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 872f8e192ada6aa49b3f3cd554105199, type: 3}
+  m_Controller: {fileID: 9100000, guid: 66e76a01b0f56de44a01b99ea14cb6ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6374854850201705297
 GameObject:
   m_ObjectHideFlags: 0

@@ -629,6 +629,7 @@ GameObject:
   - component: {fileID: 8948514947924016897}
   - component: {fileID: 7216664970096825619}
   - component: {fileID: -2335910519275324557}
+  - component: {fileID: 3225142681601035770}
   m_Layer: 0
   m_Name: human
   m_TagString: Enemy
@@ -818,6 +819,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &3225142681601035770
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877877380374649560}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 872f8e192ada6aa49b3f3cd554105199, type: 3}
+  m_Controller: {fileID: 9100000, guid: 66e76a01b0f56de44a01b99ea14cb6ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &888980607896594646
 GameObject:
   m_ObjectHideFlags: 0

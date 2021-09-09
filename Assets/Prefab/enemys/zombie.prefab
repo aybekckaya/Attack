@@ -2599,6 +2599,7 @@ GameObject:
   - component: {fileID: 5298288564828875765}
   - component: {fileID: 3417667291063997046}
   - component: {fileID: -2223733305143949891}
+  - component: {fileID: 7031020531807864192}
   m_Layer: 0
   m_Name: zombie
   m_TagString: Enemy
@@ -2788,6 +2789,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &7031020531807864192
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7342897697249573481}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 872f8e192ada6aa49b3f3cd554105199, type: 3}
+  m_Controller: {fileID: 9100000, guid: 66e76a01b0f56de44a01b99ea14cb6ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7476545979921475534
 GameObject:
   m_ObjectHideFlags: 0
