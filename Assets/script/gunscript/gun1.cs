@@ -68,11 +68,9 @@ public class gun1 : MonoBehaviour
         {
             if (atesEdebilirmi && Time.time > iceridenAtesEtmeSikligi && KalanMermi != 0)
             {
-                if (!GameKontrol.OyunDurduMu)
-                {
-                    AtesEt(false);
-                    iceridenAtesEtmeSikligi = Time.time + disaridanAtesEtmeSiklik;
-                }
+                AtesEt(false);
+                iceridenAtesEtmeSikligi = Time.time + disaridanAtesEtmeSiklik;
+
             }
             if (KalanMermi == 0)
             {

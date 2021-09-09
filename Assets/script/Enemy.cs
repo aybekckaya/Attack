@@ -10,13 +10,10 @@ public class Enemy : MonoBehaviour
     public float health;
     public float DusmanDarbeGucu;
     GameObject anaKontrolcum;
-    Animator Animatorum;
-    
     void Start()
     {
         ajan = GetComponent<NavMeshAgent>();
         anaKontrolcum = GameObject.FindWithTag("AnaKontrolcum");
-        
     }
     public void HedefBelirle(GameObject objem)
     {
@@ -48,7 +45,5 @@ public class Enemy : MonoBehaviour
     {
         anaKontrolcum.GetComponent<GameKontrol>().DusmanSayisiGuncelle();
         anaKontrolcum.GetComponent<GameKontrol>().KillEnemy(gameObject);
-        //Animatorum.Settrigger("olme");
-       // Destroy(gameObject, 5f);
     }
 }
