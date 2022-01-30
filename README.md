@@ -12,5 +12,5 @@ Details of the game are in the video below.
 
 Youtube video:
 
-[![alt text](https://i9.ytimg.com/vi/J8IgPjapePs/sddefault.jpg?v=613ba204&sqp=CMi2y48G&rs=AOn4CLAlj3qhCG_5ubc4_uOpoG17PTMrLw)](https://www.youtube.com/watch?v=J8IgPjapePs&t=22s)
+[![alt text](https://i9.ytimg.com/vi/J8IgPjapePs/mqdefault.jpg?v=613ba204&sqp=CMTN2o8G&rs=AOn4CLAenWFGN6s-SfXA-EESBIpz6zFfDA)](https://www.youtube.com/watch?v=J8IgPjapePs)
 
